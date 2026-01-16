@@ -183,7 +183,11 @@ public class SurvivalSlimefunGuide implements SlimefunGuideImplementation {
 
             return false;
         });
-
+        menu.addItem(45, ChestMenuUtils.getDmMenuButton());
+        menu.addMenuClickHandler(45, (pl, slot, item, action) -> {
+            pl.performCommand("dm open main_menu");
+            return false;
+        });
         menu.open(p);
     }
 
