@@ -70,13 +70,13 @@ public class SurvivalSlimefunGuide implements SlimefunGuideImplementation {
     private final ItemStack item;
 
     public SurvivalSlimefunGuide() {
-        item = new SlimefunGuideItem(this, "&aSlimefun 指南 &7(箱子界面)");
+        item = new SlimefunGuideItem(this, "&aSlimefun 指南 &b(QQ群：490584670)");
     }
 
     // fallback
     @Deprecated
     public SurvivalSlimefunGuide(boolean v1, boolean v2) {
-        item = new SlimefunGuideItem(this, "&aSlimefun 指南 &7(箱子界面)");
+        item = new SlimefunGuideItem(this, "&aSlimefun 指南 &b(QQ群：490584670)");
     }
 
     @Override
@@ -183,11 +183,7 @@ public class SurvivalSlimefunGuide implements SlimefunGuideImplementation {
 
             return false;
         });
-        menu.addItem(45, ChestMenuUtils.getDmMenuButton());
-        menu.addMenuClickHandler(45, (pl, slot, item, action) -> {
-            pl.performCommand("dm open main_menu");
-            return false;
-        });
+
         menu.open(p);
     }
 
