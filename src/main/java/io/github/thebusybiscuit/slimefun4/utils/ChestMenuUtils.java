@@ -35,12 +35,11 @@ public final class ChestMenuUtils {
             new SlimefunItemStack("_UI_NOT_RESEARCHED", Material.BARRIER, "Not researched");
 
     private static final ItemStack BACK_BUTTON = new SlimefunItemStack(
-            "_UI_BACK", Material.BOOK, "&7\u21E6 Back", meta -> meta.addItemFlags(ItemFlag.HIDE_ENCHANTS));
+            "_UI_BACK", Material.ENCHANTED_BOOK, "&7\u21E6 Back", meta -> meta.addItemFlags(ItemFlag.HIDE_ENCHANTS));
     private static final ItemStack MENU_BUTTON = new SlimefunItemStack(
             "_UI_MENU", Material.COMPARATOR, "&eSettings / Info", "", "&7\u21E8 Click to see more");
     private static final ItemStack SEARCH_BUTTON = new SlimefunItemStack("_UI_SEARCH", Material.NAME_TAG, "&bSearch");
-    private static final ItemStack DM_MENU_BUTTON =
-            new SlimefunItemStack("_UI_DM_MENU", Material.BOOK, "&c系统菜单", meta -> meta.addItemFlags(ItemFlag.HIDE_ENCHANTS));
+
     private static final ItemStack WIKI_BUTTON =
             new SlimefunItemStack("_UI_WIKI", Material.KNOWLEDGE_BOOK, "&3Slimefun Wiki");
 
@@ -58,7 +57,6 @@ public final class ChestMenuUtils {
     public static @Nonnull ItemStack getBackground() {
         return UI_BACKGROUND;
     }
-    public static @Nonnull ItemStack getDmMenuButton() {return DM_MENU_BUTTON;}
     public static @Nonnull ItemStack getNoPermissionItem() {
         return NO_PERMISSION;
     }
