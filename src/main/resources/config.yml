@@ -50,9 +50,9 @@ guide:
 
 researches:
   # 是否允许创造模式玩家免费解锁研究
-  free-in-creative-mode: true
+  free-in-creative-mode: false
   # 是否在解锁时燃放烟花
-  enable-fireworks: true
+  enable-fireworks: false
   # 是否使用游戏币替代使用经验解锁
   use-money-unlock: false
   # 经验自动转换到游戏币倍率
